@@ -79,7 +79,7 @@ struct ContentView: View {
             if(NeuApp_chay_lan_dau == false){
                 if(isUserPass_PIN_login == false){
                  
-                    PasscodeView_Login(textAskUserDo: "Enter PIN number to login",
+                    PasscodeView_Login(textAskUserDo: "Enter your PIN number to log in",
                                        passwordSaved: self.pin,
                                        isUserPass_PIN_login: $isUserPass_PIN_login)
                 }

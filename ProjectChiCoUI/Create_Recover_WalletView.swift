@@ -41,27 +41,30 @@ public struct Create_Recover_WalletView: View {
         {
             //Choose View
             VStack(alignment: .center) {
+                Image("TopBanner1").padding(.bottom,25)
                 
+                Text("ALL in One Dapp")
+                    .font(.custom("Times New Roman Bold", size: 35))
+                    .scaledToFit()
+                    .minimumScaleFactor(0.05)
+                    .padding(.bottom,10)
+                
+                Text("Store and protect all your decentralized assets within a Dapp")
+                    .foregroundColor(.gray)
+                    .font(.footnote)
+                    .multilineTextAlignment(.center)
                 Spacer()
-                Text("ALL in One Dapp").font(.title)
-                Text("Store and protect all your decentralized assets within a Dapp").font(.body)
-                
                 //===nút đi tới create new wallet view của gói API 1===//
                 Button(action: {
-                    //call PasscodeView_ConfirmPIN
                     self.isShow_CreateNewWallet_View = true
                 }) {
-                    VStack {
-                        Text("Create New Wallet")
-                            .padding()
-                            .foregroundColor(.white)
-                            .background(Color.green)
-                    }
-                    .padding(5)
-                    .accentColor(Color(.red))
+                    Text("Create a new Wallet")
+                        .padding()
+                        .foregroundColor(.white)
                 }
+                .background(Color.green)
+                .cornerRadius(30)
                 
-               
                 
                 //===nút đi tới recovery wallet view của gói API 4===//
                 
@@ -70,15 +73,13 @@ public struct Create_Recover_WalletView: View {
                     self.isShow_RecoveryWallet_View = true
                 }) {
                     VStack {
-                        Text("Recovery Wallet")
+                        Text("Import Wallet")
                             .padding()
-                            .foregroundColor(.white)
-                            .background(Color.green)
+                            .foregroundColor(.black)
                     }
                     .padding(5)
-                    .accentColor(Color(.red))
                 }
-                
+               
           
             }
             .padding(.bottom,50)
