@@ -1,0 +1,77 @@
+{
+  "pins" : [
+    {
+      "identity" : "bigint",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/attaswift/BigInt.git",
+      "state" : {
+        "revision" : "0ed110f7555c34ff468e72e1686e59721f2b0da6",
+        "version" : "5.3.0"
+      }
+    },
+    {
+      "identity" : "cryptoswift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/CryptoSwift.git",
+      "state" : {
+        "revision" : "039f56c5d7960f277087a0be51f5eb04ed0ec073",
+        "version" : "1.5.1"
+      }
+    },
+    {
+      "identity" : "goiapi1",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thuanchung85/GoiAPI1.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "9569d9efb4c59b03d9b69371e614b0682836953e"
+      }
+    },
+    {
+      "identity" : "goiapi2",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thuanchung85/GoiAPI2.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "f54eaf6b025b3203a570e958e231245e9b2dd366"
+      }
+    },
+    {
+      "identity" : "goiapi3",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thuanchung85/GoiAPI3.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "e6e0d1b3029e13fa88b2930b4c626813dda5e8fd"
+      }
+    },
+    {
+      "identity" : "goiapi4",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thuanchung85/GoiAPI4.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "86b483d60f86f794fe1ddc3f29200e30dc76565a"
+      }
+    },
+    {
+      "identity" : "goiapi5",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/thuanchung85/GoiAPI5.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "7a15d5df6a9b5982de8e63a26d1bad0085a00b9d"
+      }
+    },
+    {
+      "identity" : "web3swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/web3swift-team/web3swift.git",
+      "state" : {
+        "revision" : "74c24f4d3d5f1816616e9ebd16741ca5f7a57eb0",
+        "version" : "3.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}
