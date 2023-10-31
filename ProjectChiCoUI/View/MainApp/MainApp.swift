@@ -42,7 +42,7 @@ public struct MainApp: View {
                                     .mask(Rectangle().padding(.top, -20)) /// here!
                             )
                         
-                        HStack(alignment: .bottom, spacing: 65){
+                        HStack(alignment: .bottom, spacing: 60){
                             Button(action: {
                                 currentChoose = 1
                             }) {
@@ -57,7 +57,7 @@ public struct MainApp: View {
                                             .frame(width: 25)
                                             
                                         Text("Wallet")
-                                            .font(.custom("Arial", size: 10))
+                                            .font(.custom("Arial", size: 12))
                                             .foregroundColor(.green)
                                     }
                                 }
@@ -70,7 +70,7 @@ public struct MainApp: View {
                                             .frame(width: 25)
                                             .foregroundColor(.gray)
                                         Text("Wallet")
-                                            .font(.custom("Arial", size: 10))
+                                            .font(.custom("Arial", size: 12))
                                             .foregroundColor(.gray)
                                     }
                                 }
@@ -90,7 +90,7 @@ public struct MainApp: View {
                                             .frame(width: 25)
                                             
                                         Text("Market")
-                                            .font(.custom("Arial", size: 10))
+                                            .font(.custom("Arial", size: 12))
                                             .foregroundColor(.green)
                                     }
                                 }
@@ -103,7 +103,7 @@ public struct MainApp: View {
                                             .frame(width: 25)
                                             .foregroundColor(.gray)
                                         Text("Market")
-                                            .font(.custom("Arial", size: 10))
+                                            .font(.custom("Arial", size: 12))
                                             .foregroundColor(.gray)
                                     }
                                 }
@@ -123,7 +123,7 @@ public struct MainApp: View {
                                             .frame(width: 25)
                                            
                                         Text("Mining")
-                                            .font(.custom("Arial", size: 10))
+                                            .font(.custom("Arial", size: 12))
                                             .foregroundColor(.green)
                                     }
                                 }else{
@@ -135,7 +135,7 @@ public struct MainApp: View {
                                             .frame(width: 25)
                                             .foregroundColor(.gray)
                                         Text("Mining")
-                                            .font(.custom("Arial", size: 10))
+                                            .font(.custom("Arial", size: 12))
                                             .foregroundColor(.gray)
                                     }
                                 }
@@ -155,7 +155,7 @@ public struct MainApp: View {
                                             .frame(width: 25)
                                            
                                         Text("Setting")
-                                            .font(.custom("Arial", size: 10))
+                                            .font(.custom("Arial", size: 12))
                                             .foregroundColor(.green)
                                     }
                                 }
@@ -168,7 +168,7 @@ public struct MainApp: View {
                                             .frame(width: 25)
                                             .foregroundColor(.gray)
                                         Text("Setting")
-                                            .font(.custom("Arial", size: 10))
+                                            .font(.custom("Arial", size: 12))
                                             .foregroundColor(.gray)
                                     }
                                 }
