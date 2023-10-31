@@ -87,6 +87,7 @@
 		E092D1FE2AF0880100A3AEB6 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				E092D2042AF0944700A3AEB6 /* MainApp */,
 				E092D2002AF0882800A3AEB6 /* CreateAndRecoverWalletView */,
 				E092D1FF2AF0881E00A3AEB6 /* SlashScreen */,
 			);
@@ -107,6 +108,45 @@
 				E08EF0972AE767A3009D4543 /* Create_Recover_WalletView.swift */,
 			);
 			path = CreateAndRecoverWalletView;
+			sourceTree = "<group>";
+		};
+		E092D2042AF0944700A3AEB6 /* MainApp */ = {
+			isa = PBXGroup;
+			children = (
+				E092D2082AF094CF00A3AEB6 /* Setting */,
+				E092D2072AF0946900A3AEB6 /* Mining */,
+				E092D2062AF0946000A3AEB6 /* Market */,
+				E092D2052AF0945900A3AEB6 /* Wallet */,
+			);
+			path = MainApp;
+			sourceTree = "<group>";
+		};
+		E092D2052AF0945900A3AEB6 /* Wallet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Wallet;
+			sourceTree = "<group>";
+		};
+		E092D2062AF0946000A3AEB6 /* Market */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		E092D2072AF0946900A3AEB6 /* Mining */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mining;
+			sourceTree = "<group>";
+		};
+		E092D2082AF094CF00A3AEB6 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -342,7 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = LuongThuanChung.ProjectChiCoUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -379,7 +419,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = LuongThuanChung.ProjectChiCoUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
