@@ -62,6 +62,7 @@ struct ContentView: View {
                         Create_Recover_WalletView(walletName: $walletName,walletAddress:$walletAddress,
                                                   isUserPass_MakeNewWalletView: $isUserPass_MakeNewWalletView,
                                                   isUserPass_RecoveryWalletby12Seed: $isUserPass_RecoveryWalletby12Seed)
+                        .padding()
                         
                     }
                     
@@ -98,6 +99,7 @@ struct ContentView: View {
                         PasscodeView_Login(textAskUserDo: "Enter your PIN number to log in",
                                            passwordSaved: self.pin,
                                            isUserPass_PIN_login: $isUserPass_PIN_login)
+                        .padding()
                     }
                     else{
                         MainApp(walletName: self.$walletName, walletAddress: self.$walletAddress)
@@ -106,7 +108,6 @@ struct ContentView: View {
                 }
                 
             }
-            .padding()
             .onAppear(){
                 //check coi user là lần đầu chạy hay chạy lại lần sau
                 NeuApp_chay_lan_dau = true
