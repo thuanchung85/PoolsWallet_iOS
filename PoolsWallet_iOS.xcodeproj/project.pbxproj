@@ -22,6 +22,7 @@
 		E092D20E2AF0B9EF00A3AEB6 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D20D2AF0B9EF00A3AEB6 /* MarketView.swift */; };
 		E092D2102AF0BA0200A3AEB6 /* MiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D20F2AF0BA0200A3AEB6 /* MiningView.swift */; };
 		E092D2122AF0BA2C00A3AEB6 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D2112AF0BA2C00A3AEB6 /* SettingView.swift */; };
+		E092D2142AF0DDDE00A3AEB6 /* BalanceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D2132AF0DDDE00A3AEB6 /* BalanceView.swift */; };
 		E0AA45782AE268750045641D /* GoiAPI2 in Frameworks */ = {isa = PBXBuildFile; productRef = E0AA45772AE268750045641D /* GoiAPI2 */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		E092D20D2AF0B9EF00A3AEB6 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
 		E092D20F2AF0BA0200A3AEB6 /* MiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiningView.swift; sourceTree = "<group>"; };
 		E092D2112AF0BA2C00A3AEB6 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		E092D2132AF0DDDE00A3AEB6 /* BalanceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				E092D20B2AF0B98000A3AEB6 /* WalletView.swift */,
+				E092D2132AF0DDDE00A3AEB6 /* BalanceView.swift */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E092C1452ADF639200F67306 /* ContentView.swift in Sources */,
+				E092D2142AF0DDDE00A3AEB6 /* BalanceView.swift in Sources */,
 				E08EF0982AE767A3009D4543 /* Create_Recover_WalletView.swift in Sources */,
 				E092D20A2AF0958A00A3AEB6 /* MainApp.swift in Sources */,
 				E092D2122AF0BA2C00A3AEB6 /* SettingView.swift in Sources */,

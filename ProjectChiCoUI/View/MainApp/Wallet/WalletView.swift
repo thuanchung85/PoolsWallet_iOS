@@ -13,19 +13,22 @@ public struct WalletView: View {
     @Binding var walletAddress:String
     @Binding var walletName:String
     @State var pKey:String = ""
+    
     //==BODY==//
     public var body: some View{
-        Spacer()
-        Text("WalletView")
-        Text(walletAddress)
-        Text(walletName)
-        
-        Text("pkey: \(pKey)").onAppear(){
-            let d = keychain_read(service: "PoolsWallet_\(walletAddress)_PKey", account: walletAddress)
-            pKey = String(decoding: d ?? Data(), as: UTF8.self)
-             
+        VStack{
+            BalanceView(walletAddress: $walletAddress, walletName: $walletName)
+               
+               
         }
         Spacer()
+       
     }//end body
     
 }//end struct
+
+
+
+
+
+
