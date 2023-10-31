@@ -9,7 +9,7 @@ import SwiftUI
 import GoiAPI1
 import GoiAPI3
 
-import GoiAPI5
+//import GoiAPI5
 
 struct ContentView: View {
  
@@ -23,6 +23,9 @@ struct ContentView: View {
     
     //biến ghi lại tên ví
     @State var walletName = ""
+    
+    //biến ghi lại dia chi ví
+    @State var walletAddress = ""
     
     //biến nhận kết quả khi user tạo xong ví mới
     @State var  isUserPass_MakeNewWalletView = false
@@ -56,7 +59,7 @@ struct ContentView: View {
                     {
                         
                         //Create_Recover_WalletView
-                        Create_Recover_WalletView(walletName: $walletName,
+                        Create_Recover_WalletView(walletName: $walletName,walletAddress:$walletAddress,
                                                   isUserPass_MakeNewWalletView: $isUserPass_MakeNewWalletView,
                                                   isUserPass_RecoveryWalletby12Seed: $isUserPass_RecoveryWalletby12Seed)
                         
@@ -68,7 +71,7 @@ struct ContentView: View {
                     //nếu user pass quá trình tạo ví mới
                     if(isUserPass_MakeNewWalletView == true)
                     {
-                        MainWalletApp().onAppear {
+                        MainApp(walletName: self.$walletName, walletAddress: self.$walletAddress).onAppear {
                             //save vao user default người dùng pass make ví mới
                             UserDefaults.standard.set("1", forKey: "isUserPass_MakeNewWalletView")
                             UserDefaults.standard.set(walletName, forKey: "walletName")
@@ -77,7 +80,7 @@ struct ContentView: View {
                     }
                     //nếu user pass quá trình khoi phuc ví
                     if(isUserPass_RecoveryWalletby12Seed == true) {
-                        MainWalletApp().onAppear {
+                        MainApp(walletName: self.$walletName, walletAddress: self.$walletAddress).onAppear {
                             //save vào user default người dùng khôi phục ví mới xong
                             UserDefaults.standard.set("1", forKey: "isUserPass_RecoveryWalletby12Seed")
                             UserDefaults.standard.set(walletName, forKey: "walletName")
@@ -97,7 +100,7 @@ struct ContentView: View {
                                            isUserPass_PIN_login: $isUserPass_PIN_login)
                     }
                     else{
-                        MainWalletApp()
+                        MainApp(walletName: self.$walletName, walletAddress: self.$walletAddress)
                     }
                     
                 }

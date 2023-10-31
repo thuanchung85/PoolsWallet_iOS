@@ -17,6 +17,7 @@
 		E092C14A2ADF639400F67306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E092C1492ADF639400F67306 /* Preview Assets.xcassets */; };
 		E092C1522ADF641D00F67306 /* GoiAPI1 in Frameworks */ = {isa = PBXBuildFile; productRef = E092C1512ADF641D00F67306 /* GoiAPI1 */; };
 		E092D2022AF0885300A3AEB6 /* SlashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D2012AF0885300A3AEB6 /* SlashScreen.swift */; };
+		E092D20A2AF0958A00A3AEB6 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D2092AF0958A00A3AEB6 /* MainApp.swift */; };
 		E0AA45782AE268750045641D /* GoiAPI2 in Frameworks */ = {isa = PBXBuildFile; productRef = E0AA45772AE268750045641D /* GoiAPI2 */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		E092C1492ADF639400F67306 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E092D2012AF0885300A3AEB6 /* SlashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlashScreen.swift; sourceTree = "<group>"; };
 		E092D2032AF0927A00A3AEB6 /* PoolsWallet-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PoolsWallet-iOS-Info.plist"; sourceTree = "<group>"; };
+		E092D2092AF0958A00A3AEB6 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				E092D2072AF0946900A3AEB6 /* Mining */,
 				E092D2062AF0946000A3AEB6 /* Market */,
 				E092D2052AF0945900A3AEB6 /* Wallet */,
+				E092D2092AF0958A00A3AEB6 /* MainApp.swift */,
 			);
 			path = MainApp;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 			files = (
 				E092C1452ADF639200F67306 /* ContentView.swift in Sources */,
 				E08EF0982AE767A3009D4543 /* Create_Recover_WalletView.swift in Sources */,
+				E092D20A2AF0958A00A3AEB6 /* MainApp.swift in Sources */,
 				E092C1432ADF639200F67306 /* PoolsWallet_iOS.swift in Sources */,
 				E092D2022AF0885300A3AEB6 /* SlashScreen.swift in Sources */,
 			);

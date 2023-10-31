@@ -10,7 +10,8 @@ import GoiAPI4
 public struct Create_Recover_WalletView: View {
    
     @Binding var walletName:String
-   
+    @Binding var walletAddress:String
+    
     @Binding var isUserPass_RecoveryWalletby12Seed:Bool
    
     @Binding var isUserPass_MakeNewWalletView:Bool
@@ -23,10 +24,10 @@ public struct Create_Recover_WalletView: View {
     
     
     //=====INIT=======//
-    public init(walletName: Binding<String>,
+    public init(walletName: Binding<String>, walletAddress:Binding<String>,
                 isUserPass_MakeNewWalletView:Binding<Bool>, isUserPass_RecoveryWalletby12Seed:Binding<Bool>) {
         self._walletName = walletName
-       
+        self._walletAddress = walletAddress
         self._isUserPass_RecoveryWalletby12Seed = isUserPass_RecoveryWalletby12Seed
         self._isUserPass_MakeNewWalletView = isUserPass_MakeNewWalletView
         
@@ -90,7 +91,7 @@ public struct Create_Recover_WalletView: View {
         //nếu user bấm nút Create New Wallet thì vào view Create New Wallet
         if(self.isShow_CreateNewWallet_View == true)
         {
-            CreateNewWallet_View(walletName: $walletName,
+            CreateNewWallet_View(walletName: $walletName, walletAddress: $walletAddress,
                                  isUserPass_MakeNewWalletView: $isUserPass_MakeNewWalletView)
           
         }
@@ -98,7 +99,7 @@ public struct Create_Recover_WalletView: View {
         //nếu user bấm nút Recovery Wallet thì vào view Recovery Wallet
         if (self.isShow_RecoveryWallet_View == true){
             RecoverWallet_View(isUserPassRecoveryWalletby12Seed: $isUserPass_RecoveryWalletby12Seed,
-                               wallNewName: $walletName)
+                               wallNewName: $walletName, wallAddress: $walletAddress)
         }
         
         
