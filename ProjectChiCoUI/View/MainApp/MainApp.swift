@@ -16,15 +16,18 @@ public struct MainApp: View {
     }
     
     public var body: some View{
-        NavigationView {
+      
             //Choose View
             VStack(alignment: .center) {
                 Text(walletName)
                 Text(walletAddress)
             }
             .padding(.bottom,50)
-            
-        }
+            .onAppear(){
+                walletName = UserDefaults.standard.string(forKey: "PoolsWallet_walletName") ?? ""
+                walletAddress = UserDefaults.standard.string(forKey: "PoolsWallet_addressWallet") ?? ""
+            }
+        
         //
     }
     
