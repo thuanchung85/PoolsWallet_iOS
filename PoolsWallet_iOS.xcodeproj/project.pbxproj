@@ -18,6 +18,10 @@
 		E092C1522ADF641D00F67306 /* GoiAPI1 in Frameworks */ = {isa = PBXBuildFile; productRef = E092C1512ADF641D00F67306 /* GoiAPI1 */; };
 		E092D2022AF0885300A3AEB6 /* SlashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D2012AF0885300A3AEB6 /* SlashScreen.swift */; };
 		E092D20A2AF0958A00A3AEB6 /* MainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D2092AF0958A00A3AEB6 /* MainApp.swift */; };
+		E092D20C2AF0B98000A3AEB6 /* WalletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D20B2AF0B98000A3AEB6 /* WalletView.swift */; };
+		E092D20E2AF0B9EF00A3AEB6 /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D20D2AF0B9EF00A3AEB6 /* MarketView.swift */; };
+		E092D2102AF0BA0200A3AEB6 /* MiningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D20F2AF0BA0200A3AEB6 /* MiningView.swift */; };
+		E092D2122AF0BA2C00A3AEB6 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D2112AF0BA2C00A3AEB6 /* SettingView.swift */; };
 		E0AA45782AE268750045641D /* GoiAPI2 in Frameworks */ = {isa = PBXBuildFile; productRef = E0AA45772AE268750045641D /* GoiAPI2 */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +35,10 @@
 		E092D2012AF0885300A3AEB6 /* SlashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlashScreen.swift; sourceTree = "<group>"; };
 		E092D2032AF0927A00A3AEB6 /* PoolsWallet-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PoolsWallet-iOS-Info.plist"; sourceTree = "<group>"; };
 		E092D2092AF0958A00A3AEB6 /* MainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainApp.swift; sourceTree = "<group>"; };
+		E092D20B2AF0B98000A3AEB6 /* WalletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletView.swift; sourceTree = "<group>"; };
+		E092D20D2AF0B9EF00A3AEB6 /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		E092D20F2AF0BA0200A3AEB6 /* MiningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiningView.swift; sourceTree = "<group>"; };
+		E092D2112AF0BA2C00A3AEB6 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 		E092D2052AF0945900A3AEB6 /* Wallet */ = {
 			isa = PBXGroup;
 			children = (
+				E092D20B2AF0B98000A3AEB6 /* WalletView.swift */,
 			);
 			path = Wallet;
 			sourceTree = "<group>";
@@ -134,6 +143,7 @@
 		E092D2062AF0946000A3AEB6 /* Market */ = {
 			isa = PBXGroup;
 			children = (
+				E092D20D2AF0B9EF00A3AEB6 /* MarketView.swift */,
 			);
 			path = Market;
 			sourceTree = "<group>";
@@ -141,6 +151,7 @@
 		E092D2072AF0946900A3AEB6 /* Mining */ = {
 			isa = PBXGroup;
 			children = (
+				E092D20F2AF0BA0200A3AEB6 /* MiningView.swift */,
 			);
 			path = Mining;
 			sourceTree = "<group>";
@@ -148,6 +159,7 @@
 		E092D2082AF094CF00A3AEB6 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				E092D2112AF0BA2C00A3AEB6 /* SettingView.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -239,8 +251,12 @@
 				E092C1452ADF639200F67306 /* ContentView.swift in Sources */,
 				E08EF0982AE767A3009D4543 /* Create_Recover_WalletView.swift in Sources */,
 				E092D20A2AF0958A00A3AEB6 /* MainApp.swift in Sources */,
+				E092D2122AF0BA2C00A3AEB6 /* SettingView.swift in Sources */,
 				E092C1432ADF639200F67306 /* PoolsWallet_iOS.swift in Sources */,
 				E092D2022AF0885300A3AEB6 /* SlashScreen.swift in Sources */,
+				E092D2102AF0BA0200A3AEB6 /* MiningView.swift in Sources */,
+				E092D20C2AF0B98000A3AEB6 /* WalletView.swift in Sources */,
+				E092D20E2AF0B9EF00A3AEB6 /* MarketView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

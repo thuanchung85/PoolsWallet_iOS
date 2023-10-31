@@ -25,9 +25,21 @@ public struct MainApp: View {
             VStack(alignment: .center) {
                 //khu chưa các module view khác
                 VStack{
-                    Text(walletName)
-                    Text(walletAddress)
-                    Spacer()
+                    switch self.currentChoose
+                    {
+                    case 1:
+                        WalletView(walletAddress: $walletAddress, walletName: $walletName)
+                    case 2:
+                        MarketView()
+                    case 3:
+                        MiningView()
+                    case 4:
+                        SettingView()
+                    default:
+                        Text("NOVIEW")
+                        Spacer()
+                        
+                    }
                 }
                 
                 //khu menu 4 nut bên dưới
