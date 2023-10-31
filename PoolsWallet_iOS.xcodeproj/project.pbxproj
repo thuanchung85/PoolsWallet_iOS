@@ -16,6 +16,7 @@
 		E092C1472ADF639400F67306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E092C1462ADF639400F67306 /* Assets.xcassets */; };
 		E092C14A2ADF639400F67306 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E092C1492ADF639400F67306 /* Preview Assets.xcassets */; };
 		E092C1522ADF641D00F67306 /* GoiAPI1 in Frameworks */ = {isa = PBXBuildFile; productRef = E092C1512ADF641D00F67306 /* GoiAPI1 */; };
+		E092D2022AF0885300A3AEB6 /* SlashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E092D2012AF0885300A3AEB6 /* SlashScreen.swift */; };
 		E0AA45782AE268750045641D /* GoiAPI2 in Frameworks */ = {isa = PBXBuildFile; productRef = E0AA45772AE268750045641D /* GoiAPI2 */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 		E092C1442ADF639200F67306 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E092C1462ADF639400F67306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E092C1492ADF639400F67306 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E092D2012AF0885300A3AEB6 /* SlashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlashScreen.swift; sourceTree = "<group>"; };
+		E092D2032AF0927A00A3AEB6 /* PoolsWallet-iOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "PoolsWallet-iOS-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +50,7 @@
 		E092C1362ADF639200F67306 = {
 			isa = PBXGroup;
 			children = (
+				E092D2032AF0927A00A3AEB6 /* PoolsWallet-iOS-Info.plist */,
 				E092C1412ADF639200F67306 /* ProjectChiCoUI */,
 				E092C1402ADF639200F67306 /* Products */,
 			);
@@ -63,9 +67,9 @@
 		E092C1412ADF639200F67306 /* ProjectChiCoUI */ = {
 			isa = PBXGroup;
 			children = (
+				E092D1FE2AF0880100A3AEB6 /* View */,
 				E092C1422ADF639200F67306 /* PoolsWallet_iOS.swift */,
 				E092C1442ADF639200F67306 /* ContentView.swift */,
-				E08EF0972AE767A3009D4543 /* Create_Recover_WalletView.swift */,
 				E092C1462ADF639400F67306 /* Assets.xcassets */,
 				E092C1482ADF639400F67306 /* Preview Content */,
 			);
@@ -78,6 +82,31 @@
 				E092C1492ADF639400F67306 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E092D1FE2AF0880100A3AEB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E092D2002AF0882800A3AEB6 /* CreateAndRecoverWalletView */,
+				E092D1FF2AF0881E00A3AEB6 /* SlashScreen */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E092D1FF2AF0881E00A3AEB6 /* SlashScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E092D2012AF0885300A3AEB6 /* SlashScreen.swift */,
+			);
+			path = SlashScreen;
+			sourceTree = "<group>";
+		};
+		E092D2002AF0882800A3AEB6 /* CreateAndRecoverWalletView */ = {
+			isa = PBXGroup;
+			children = (
+				E08EF0972AE767A3009D4543 /* Create_Recover_WalletView.swift */,
+			);
+			path = CreateAndRecoverWalletView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +196,7 @@
 				E092C1452ADF639200F67306 /* ContentView.swift in Sources */,
 				E08EF0982AE767A3009D4543 /* Create_Recover_WalletView.swift in Sources */,
 				E092C1432ADF639200F67306 /* PoolsWallet_iOS.swift in Sources */,
+				E092D2022AF0885300A3AEB6 /* SlashScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,9 +329,9 @@
 				DEVELOPMENT_TEAM = 2SG8TQJQR9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PoolsWallet-iOS-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "PoolsWallet Native";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need an access camera to scan your QR code wallet address";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
@@ -336,9 +366,9 @@
 				DEVELOPMENT_TEAM = 2SG8TQJQR9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "PoolsWallet-iOS-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "PoolsWallet Native";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need an access camera to scan your QR code wallet address";
-				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
